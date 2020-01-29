@@ -21,18 +21,3 @@ class IrregularVerbClass {
         self.pastParticiple = pastParticiple
     }
 }
-
-struct VerbsStruct {
-    
-    let capitalLetter: String
-    let infinitive: String
-    let simplePast: String
-    let pastParticiple: String
-//    let irregularVerbsStruct: [IrregularVerbsStruct]
-}
-
-//struct IrregularVerbsStruct {
-//    let infinitive: String
-//    let simplePast: String
-//    let pastParticiple: String
-//}
