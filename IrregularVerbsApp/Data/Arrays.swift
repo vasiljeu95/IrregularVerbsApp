@@ -46,65 +46,65 @@ let irregularVerbs = [
     ),
     //MARK: - F
     IrregularVerbClass(
-        capitalLetter: "",
+        capitalLetter: "F",
         infinitive: ["fall", "feed", "feel", "fight", "find", "flee", "fling", "fly", "forbid", "forecast", "forget", "forsake", "freeze"],
         simplePast: ["fell", "fed", "felt", "fought", "found", "fled", "flung", "flew", "forbad, forbade", "forecast, forecasted", "forgot", "forsook", "froze"],
         pastParticiple: ["fallen", "fed", "felt", "fought", "found", "fled", "flung", "flown", "forbid, forbidden", "forecast, forecasted", "forgotten", "forsaken", "frozen"]
     ),
+    //MARK: - G
+    IrregularVerbClass(
+        capitalLetter: "G",
+        infinitive: ["geld", "get", "gild", "give", "gnaw", "go", "grind", "grip", "grow"],
+        simplePast: ["gelded, gelt", "got", "gilded, gilt", "gave", "gnawed", "went", "ground", "gripped, gript", "grew"],
+        pastParticiple: ["gelded, gelt", "got, gotten", "gilded, gilt", "given", "gnawed, gnawn", "gone", "ground", "gripped, gript", "grown"]
+    ),
+    //MARK: - H
+    IrregularVerbClass(
+        capitalLetter: "H",
+        infinitive: ["hang", "have", "hear", "heave", "hew", "hide", "hit", "hold", "hurt"],
+        simplePast: ["hung", "had", "heard", "heaved, hove", "hewed", "hid", "hit", "held", "hurt"],
+        pastParticiple: ["hung", "had", "heard", "heaved, hove", "hewed, hewn", "hidden, hid", "hit", "held", "hurt"]
+    ),
     //MARK: - F
     //    IrregularVerbClass(
     //        capitalLetter: "",
-    //        infinitive: [],
-    //        simplePast: [],
-    //        pastParticiple: []
+    //        infinitive: ["", "", "", "", "", "", "", "", "", ""],
+    //        simplePast: ["", "", "", "", "", "", "", "", "", ""],
+    //        pastParticiple: ["", "", "", "", "", "", "", "", "", ""]
     //    ),
     //MARK: - F
     //    IrregularVerbClass(
     //        capitalLetter: "",
-    //        infinitive: [],
-    //        simplePast: [],
-    //        pastParticiple: []
+    //        infinitive: ["", "", "", "", "", "", "", "", "", ""],
+    //        simplePast: ["", "", "", "", "", "", "", "", "", ""],
+    //        pastParticiple: ["", "", "", "", "", "", "", "", "", ""]
     //    ),
     //MARK: - F
     //    IrregularVerbClass(
     //        capitalLetter: "",
-    //        infinitive: [],
-    //        simplePast: [],
-    //        pastParticiple: []
+    //        infinitive: ["", "", "", "", "", "", "", "", "", ""],
+    //        simplePast: ["", "", "", "", "", "", "", "", "", ""],
+    //        pastParticiple: ["", "", "", "", "", "", "", "", "", ""]
     //    ),
     //MARK: - F
     //    IrregularVerbClass(
     //        capitalLetter: "",
-    //        infinitive: [],
-    //        simplePast: [],
-    //        pastParticiple: []
+    //        infinitive: ["", "", "", "", "", "", "", "", "", ""],
+    //        simplePast: ["", "", "", "", "", "", "", "", "", ""],
+    //        pastParticiple: ["", "", "", "", "", "", "", "", "", ""]
     //    ),
     //MARK: - F
     //    IrregularVerbClass(
     //        capitalLetter: "",
-    //        infinitive: [],
-    //        simplePast: [],
-    //        pastParticiple: []
+    //        infinitive: ["", "", "", "", "", "", "", "", "", ""],
+    //        simplePast: ["", "", "", "", "", "", "", "", "", ""],
+    //        pastParticiple: ["", "", "", "", "", "", "", "", "", ""]
     //    ),
     //MARK: - F
     //    IrregularVerbClass(
     //        capitalLetter: "",
-    //        infinitive: [],
-    //        simplePast: [],
-    //        pastParticiple: []
-    //    ),
-    //MARK: - F
-    //    IrregularVerbClass(
-    //        capitalLetter: "",
-    //        infinitive: [],
-    //        simplePast: [],
-    //        pastParticiple: []
-    //    ),
-    //MARK: - F
-    //    IrregularVerbClass(
-    //        capitalLetter: "",
-    //        infinitive: [],
-    //        simplePast: [],
-    //        pastParticiple: []
+    //        infinitive: ["", "", "", "", "", "", "", "", "", ""],
+    //        simplePast: ["", "", "", "", "", "", "", "", "", ""],
+    //        pastParticiple: ["", "", "", "", "", "", "", "", "", ""]
     //    ),
 ]
