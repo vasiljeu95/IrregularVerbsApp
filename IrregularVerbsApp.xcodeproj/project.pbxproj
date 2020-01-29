@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		E32F7AF923DDAB2D00FEF366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F7AF823DDAB2D00FEF366 /* AppDelegate.swift */; };
 		E32F7AFB23DDAB2D00FEF366 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F7AFA23DDAB2D00FEF366 /* SceneDelegate.swift */; };
-		E32F7AFD23DDAB2D00FEF366 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F7AFC23DDAB2D00FEF366 /* ViewController.swift */; };
 		E32F7B0023DDAB2D00FEF366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32F7AFE23DDAB2D00FEF366 /* Main.storyboard */; };
 		E32F7B0223DDAB3200FEF366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32F7B0123DDAB3200FEF366 /* Assets.xcassets */; };
 		E32F7B0523DDAB3200FEF366 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32F7B0323DDAB3200FEF366 /* LaunchScreen.storyboard */; };
+		E32F7B0D23DDAF8400FEF366 /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F7B0C23DDAF8400FEF366 /* Arrays.swift */; };
+		E32F7B1123DDB1B600FEF366 /* VerbsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F7B1023DDB1B600FEF366 /* VerbsStruct.swift */; };
+		E32F7B1423DDCF0B00FEF366 /* VerbsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F7B1323DDCF0B00FEF366 /* VerbsTableViewController.swift */; };
+		E32F7B1723DDD1B200FEF366 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F7B1623DDD1B200FEF366 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E32F7AF523DDAB2D00FEF366 /* IrregularVerbsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrregularVerbsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32F7AF823DDAB2D00FEF366 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E32F7AFA23DDAB2D00FEF366 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E32F7AFC23DDAB2D00FEF366 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E32F7AFF23DDAB2D00FEF366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E32F7B0123DDAB3200FEF366 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E32F7B0423DDAB3200FEF366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E32F7B0623DDAB3200FEF366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E32F7B0C23DDAF8400FEF366 /* Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrays.swift; sourceTree = "<group>"; };
+		E32F7B1023DDB1B600FEF366 /* VerbsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerbsStruct.swift; sourceTree = "<group>"; };
+		E32F7B1323DDCF0B00FEF366 /* VerbsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerbsTableViewController.swift; sourceTree = "<group>"; };
+		E32F7B1623DDD1B200FEF366 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,48 @@
 			children = (
 				E32F7AF823DDAB2D00FEF366 /* AppDelegate.swift */,
 				E32F7AFA23DDAB2D00FEF366 /* SceneDelegate.swift */,
-				E32F7AFC23DDAB2D00FEF366 /* ViewController.swift */,
+				E32F7B0F23DDB17700FEF366 /* Controllers */,
+				E32F7B1223DDB1C300FEF366 /* Model */,
+				E32F7B0E23DDAF8700FEF366 /* Data */,
+				E32F7B1523DDD17E00FEF366 /* Helpers */,
 				E32F7AFE23DDAB2D00FEF366 /* Main.storyboard */,
 				E32F7B0123DDAB3200FEF366 /* Assets.xcassets */,
 				E32F7B0323DDAB3200FEF366 /* LaunchScreen.storyboard */,
 				E32F7B0623DDAB3200FEF366 /* Info.plist */,
 			);
 			path = IrregularVerbsApp;
+			sourceTree = "<group>";
+		};
+		E32F7B0E23DDAF8700FEF366 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E32F7B0C23DDAF8400FEF366 /* Arrays.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E32F7B0F23DDB17700FEF366 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E32F7B1323DDCF0B00FEF366 /* VerbsTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E32F7B1223DDB1C300FEF366 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E32F7B1023DDB1B600FEF366 /* VerbsStruct.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E32F7B1523DDD17E00FEF366 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E32F7B1623DDD1B200FEF366 /* CustomTableViewCell.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E32F7AFD23DDAB2D00FEF366 /* ViewController.swift in Sources */,
+				E32F7B1123DDB1B600FEF366 /* VerbsStruct.swift in Sources */,
+				E32F7B1423DDCF0B00FEF366 /* VerbsTableViewController.swift in Sources */,
+				E32F7B1723DDD1B200FEF366 /* CustomTableViewCell.swift in Sources */,
+				E32F7B0D23DDAF8400FEF366 /* Arrays.swift in Sources */,
 				E32F7AF923DDAB2D00FEF366 /* AppDelegate.swift in Sources */,
 				E32F7AFB23DDAB2D00FEF366 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,6 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5288NF3D62;
 				INFOPLIST_FILE = IrregularVerbsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +350,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5288NF3D62;
 				INFOPLIST_FILE = IrregularVerbsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
