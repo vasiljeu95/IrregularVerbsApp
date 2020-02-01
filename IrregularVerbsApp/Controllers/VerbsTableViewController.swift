@@ -10,8 +10,7 @@ import UIKit
 
 class VerbsTableViewController: UITableViewController {
 
-//    let verbs = irregularVerbsArray
-    let verbs = irregularVerbs
+    let verbs = VerbsArrays.irregularVerbs
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,26 +33,13 @@ class VerbsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "verbsCell", for: indexPath) as! CustomTableViewCell
 
         cell.infinitiveLabel.text = verbs[indexPath.section].infinitive[indexPath.row]
         cell.simplePastLabel.text = verbs[indexPath.section].simplePast[indexPath.row]
         cell.pastParticipleLabel.text = verbs[indexPath.section].pastParticiple[indexPath.row]
-//        switch indexPath.row {
-//        case 0:
-//            cell.infinitiveLabel.text = irregularVerbsArray[indexPath.section].infinitive
-//            cell.simplePastLabel.text = irregularVerbsArray[indexPath.section].simplePast
-//            cell.pastParticipleLabel.text = irregularVerbsArray[indexPath.section].pastParticiple
-//        default:
-//            break
-//        }
         
         return cell
-    }
-    
-    // MARK: - Tabble view delegate
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -78,50 +64,27 @@ class VerbsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 45
     }
+
+    // MARK: - Tabble view delegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+
+        let infinitiveData = verbs[indexPath.section].infinitive[indexPath.row]
+        let simplePastData = verbs[indexPath.section].simplePast[indexPath.row]
+        let pastParticipleData = verbs[indexPath.section].pastParticiple[indexPath.row]
+
+        let senderData = SenderData(infinitiveData: infinitiveData, simplePastData: simplePastData, pastParticipleData: pastParticipleData)
+        
+        performSegue(withIdentifier: "showVerbsData", sender: senderData)
+    }
     
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showVerbsData" {
+            let irregularVerbsVC = segue.destination as! IrregularVerbsViewController
+            irregularVerbsVC.verbsTableViewCellData = sender as? SenderData
+        }
     }
-    */
+    
 
 }

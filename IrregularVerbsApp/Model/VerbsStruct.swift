@@ -21,3 +21,15 @@ class IrregularVerbClass {
         self.pastParticiple = pastParticiple
     }
 }
+
+struct SenderData {
+    let infinitiveData: String?
+    let simplePastData: String?
+    let pastParticipleData: String?
+    
+    init(infinitiveData: String, simplePastData: String, pastParticipleData: String) {
+        self.infinitiveData = infinitiveData
+        self.simplePastData = simplePastData
+        self.pastParticipleData = pastParticipleData
+    }
+}
