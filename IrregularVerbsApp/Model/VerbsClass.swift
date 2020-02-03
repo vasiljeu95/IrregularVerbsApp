@@ -1,5 +1,5 @@
 //
-//  VerbsStruct.swift
+//  VerbsClass.swift
 //  IrregularVerbsApp
 //
 //  Created by Stepan Vasilyeu on 1/26/20.
@@ -22,10 +22,10 @@ class IrregularVerbClass {
     }
 }
 
-struct SenderData {
-    let infinitiveData: String?
-    let simplePastData: String?
-    let pastParticipleData: String?
+class SenderData {
+    let infinitiveData: String
+    let simplePastData: String
+    let pastParticipleData: String
     
     init(infinitiveData: String, simplePastData: String, pastParticipleData: String) {
         self.infinitiveData = infinitiveData

@@ -14,14 +14,14 @@ class IrregularVerbsViewController: UIViewController {
     @IBOutlet weak var simplePastLabel: UILabel!
     @IBOutlet weak var pastParticipleLabel: UILabel!
     
-    var verbsTableViewCellData: SenderData!
+    var verbsTableViewCellData: SenderData?
     
     override func viewDidLoad() {
     super.viewDidLoad()
         
-        infinitiveLabel.text = verbsTableViewCellData.infinitiveData
-        simplePastLabel.text = verbsTableViewCellData.simplePastData
-        pastParticipleLabel.text = verbsTableViewCellData.pastParticipleData
+        infinitiveLabel.text = verbsTableViewCellData?.infinitiveData
+        simplePastLabel.text = verbsTableViewCellData?.simplePastData
+        pastParticipleLabel.text = verbsTableViewCellData?.pastParticipleData
     }
 
 }

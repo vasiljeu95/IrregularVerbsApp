@@ -31,7 +31,6 @@ class VerbsTableViewController: UITableViewController {
         return verbs[section].infinitive.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "verbsCell", for: indexPath) as! CustomTableViewCell
 
@@ -56,7 +55,6 @@ class VerbsTableViewController: UITableViewController {
         label.textColor = #colorLiteral(red: 0.1679699719, green: 0.1481626928, blue: 0.1572957337, alpha: 1)
         label.frame = CGRect(x: 24, y: 3, width: tableView.bounds.width - 78, height: 45)
         view.addSubview(label)
-        
         
         return view
     }
@@ -85,6 +83,27 @@ class VerbsTableViewController: UITableViewController {
             irregularVerbsVC.verbsTableViewCellData = sender as? SenderData
         }
     }
-    
 
 }
+
+
+
+//    // MARK: - SwiftUI
+//import SwiftUI
+//struct FlowProvider: PreviewProvider {
+//    static var previews: some View {
+//        ContainterView().edgesIgnoringSafeArea(.all)
+//    }
+//
+//    struct ContainterView: UIViewControllerRepresentable {
+//
+//        let tabBar = MainTabBarController()
+//        func makeUIViewController(context: UIViewControllerRepresentableContext<FlowProvider.ContainterView>) -> MainTabBarController {
+//            return tabBar
+//        }
+//
+//        func updateUIViewController(_ uiViewController: FlowProvider.ContainterView.UIViewControllerType, context: UIViewControllerRepresentableContext<FlowProvider.ContainterView>) {
+//
+//        }
+//    }
+//}
